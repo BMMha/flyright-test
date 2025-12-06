@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <title>رفع ملف إلى GitHub – Flyright Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Cairo", "Tahoma", sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,.08);
+            max-width: 480px;
+            width: 100%;
+            padding: 2rem 2.5rem;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 1.6rem;
+            color: #111;
+        }
+        label {
+            display: block;
+            margin: 1.2rem 0 .4rem;
+            font-weight: 600;
+            color: #333;
+        }
+        input[type=file] {
+            display: block;
+            width: 100%;
+            padding: .5rem 0;
+        }
+        input[type=text] {
+            width: 100%;
+            padding: .55rem .75rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: .95rem;
+        }
+        button {
+            margin-top: 1.5rem;
+            width: 100%;
+            background: #238636;
+            color: #fff;
+            border: none;
+            padding: .75rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background .25s;
+        }
+        button:hover {
+            background: #2ea043;
+        }
+        small {
+            color: #666;
+            display: block;
+            margin-top: .25rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>رفع ملف إلى GitHub</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file">اختر الملف:</label>
+            <input type="file" name="file" id="file" required>
+
+            <label for="github_path">المسار داخل الريبو (اختياري):</label>
+            <input type="text" name="github_path" id="github_path" placeholder="مثال: images/logo.png">
+            <small>اتركه فارغًا ليستخدم اسم الملف الأصلي.</small>
+
+            <button type="submit">رفع 🚀</button>
+        </form>
+    </div>
+</body>
+</html>
