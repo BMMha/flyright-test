@@ -14,7 +14,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
 # ========== إعدادات GitHub ==========
-GITHUB_TOKEN = os.getenv("GH_TOKEN") or "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"
+GITHUB_TOKEN = os.getenv("GH_TOKEN") or "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"
 GITHUB_REPO  = os.getenv("GH_REPO")  or "BMMha/flyright-test"  # نموذج: owner/repo
 BRANCH       = "main"
 # =====================================
