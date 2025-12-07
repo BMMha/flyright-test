@@ -1,0 +1,14 @@
+/* Reset */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Cairo",Tahoma,sans-serif;background:#f7f9fb;color:#222;line-height:1.7;font-size:18px}
+header{background:#0d7a3d;color:#fff;padding:2rem 1rem;text-align:center}
+nav{background:#fff;border-bottom:1px solid #e5e5e5;padding:.75rem 1rem;display:flex;gap:1rem}
+nav a{color:#0d7a3d;text-decoration:none;font-weight:600}
+main{max-width:800px;margin:2rem auto;padding:0 1rem}
+h1,h2{margin-bottom:.75rem}
+pre{background:#f4f4f4;border-left:4px solid #0d7a3d;padding:1rem;overflow-x:auto}
+footer{text-align:center;padding:2rem 1rem;font-size:.9rem;color:#666}
+/* CWV: صور بدون CLS */
+img{max-width:100%;height:auto;display:block}
+/* تحميل الخطوط الاختياريية بدون حظر العرض */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
