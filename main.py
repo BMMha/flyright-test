@@ -48,6 +48,11 @@ def push_to_github(file_path: Path, gh_path: str) -> str:
 
 
 # ---------- صفحة الرئيسة ----------
+@app.route("/indexa")
+def indexa():
+    return render_template("indexa.html")
+
+
 @app.route("/")
 def index():
     return render_template("index.html")
