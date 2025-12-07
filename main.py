@@ -50,7 +50,7 @@ def push_to_github(file_path: Path, gh_path: str) -> str:
 # ---------- صفحة الرئيسة ----------
 @app.route("/indexa")
 def indexa():
-    return render_template("indexa.html")
+    return render_template("indexaa.html")
 
 
 @app.route("/")
